@@ -40,13 +40,54 @@ ul {
 }
 
 body {
-    background-color: #EAFFF1;
+    background-color: whitesmoke;
     overflow-x: hidden;
 }
 
 .section-1, .section-2, .section-3 {
     text-align: center;
     
+}
+
+#donut-count{
+    text-align: center;
+}
+
+.button {
+    background:linear-gradient(to bottom, #5b5861 5%, #454445 100%);
+	background-color:#8ca0c2;
+	border-radius:13px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:16px;
+	font-weight:bold;
+	padding:10px 15px;
+	text-decoration:none;
+}
+
+.button:hover {
+    background:linear-gradient(to bottom, #479e47 5%, #92c28c 100%);
+	background-color:#476e9e;
+}
+
+.summaryContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.doughnut-img {
+    width: 200px;
+    height: 200px'
+}
+
+#summary {
+    width: 500px;
 }
 
 footer {

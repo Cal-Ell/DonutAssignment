@@ -1,5 +1,6 @@
 'use scrict';
-alert('hello from js');
+
+const totalDonutCount = document.getElementById("donut-count");
 //increase amount by clicks
 let donutCount = 0;
 //for every increment add a second, buy one take one second, by 2 take two seconds, etc
@@ -12,6 +13,13 @@ let donutMultiplierCount = 0;
 //number of donut cost to purchase multiplier donut, increment by 10% for each purchase
 let donutMultiplierCost = 10;
 
+totalDonutCount.innerHTML = donutCount;
+
+const incrementDonut = () => {
+    donutCount++
+    return totalDonutCount.innerHTML = donutCount;
+}
+
 //increments automatically for us every second
 const autoClicker = () => {
 
@@ -22,3 +30,6 @@ const donutMultiplier = () => {
     //fomula
     Math.pow(1.2, donutMultiplierCount);
 }
+
+const incrementCount = document.getElementById("increment-donut");
+incrementCount.addEventListener('click', incrementDonut);
