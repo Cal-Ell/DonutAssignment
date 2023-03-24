@@ -5,7 +5,6 @@
     <link rel="stylesheet" type="text/css" href="styling.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="DonutMaker.js"></script>
     <link rel="stylesheet" type="text/css" href="styling.css" />
 </head>
 <header>
@@ -20,11 +19,23 @@
 <body>
     <div id="page-container">
         <div id="content-wrap">
+            <div class="welcome">
+                <h1>Welcome to Fred the Bakers Bakery!</h1>
+                <h3>Please select how many Donuts you would like!</h3>
+            </div>
             <section>
                 <div class="section-1">
-                    <h1>Section that handles click</h1>
-                    <h2>Contains a button that can be clicked to make donuts.</h2>
-                    <h2>Displays the amount of Donuts made.</h2>
+                    <!--Section that handles click
+                    Contains a button that can be clicked to make donuts.
+                    Displays the amount of Donuts made.-->
+                    <div class="doughnuts">
+                        <img class="doughnut-img" src="images/donuts.jpg" alt="doughnuts" />
+                        <div class="donut-info">
+                            <h4>Doughnuts: </h4>
+                            <h3 id="donut-count">0</h3>
+                            <button class="button" id="increment-donut" type="button">Increment</button>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section>
@@ -45,8 +56,7 @@
             </section>
         </div>
     </div>
+    <script src="DonutMaker.js"></script>
 </body>
-<footer>
-    <p>Author: Calvin Malagon</p>
-  </footer>
+<footer><p>Author: Calvin Malagon</p></footer>
 </html>
