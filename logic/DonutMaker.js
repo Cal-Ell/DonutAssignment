@@ -27,7 +27,10 @@ const incrementDonut = () => {
 
 //increments automatically for us every second
 const autoClicker = () => {
-    
+    if(!donutCount > 100){
+        alert('You don\'t\ have enough donuts to purchase.');
+        return null;
+    }
 }
 
 //Multiplies Donut for each click
