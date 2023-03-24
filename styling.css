@@ -1,0 +1,30 @@
+#navbar {
+    display: flex;
+    background-color: #333;
+    top: 0;
+    max-width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a:hover {
+    background-color: #107322;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    font-size: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
