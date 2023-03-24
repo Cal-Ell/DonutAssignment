@@ -9,7 +9,7 @@
 }
 
 #navbar {
-    display: flex;
+    flex-direction: row;
     background-color: #333;
     top: 0;
     max-width: 100%;
@@ -31,6 +31,12 @@ a {
     color: whitesmoke;
 }
 
+.tracker-container{
+    float: right;
+    color: whitesmoke;
+    display: flex !important;
+}
+
 ul {
     list-style-type: none;
     background-color: #333;
@@ -46,12 +52,10 @@ body {
 
 .section-1, .section-2, .section-3 {
     text-align: center;
-    
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-#donut-count{
-    text-align: center;
-}
 
 .button {
     background:linear-gradient(to bottom, #5b5861 5%, #454445 100%);
@@ -81,10 +85,11 @@ body {
     text-align: center;
 }
 
-.doughnut-img {
+.images {
     width: 200px;
     height: 200px'
 }
+
 
 #summary {
     width: 500px;
