@@ -1,8 +1,10 @@
 'use scrict';
-
+const trackerCount = document.getElementById("tracker-count");
 const totalDonutCount = document.getElementById("donut-count");
 //increase amount by clicks
 let donutCount = 0;
+
+const totalAutoClickerCount = document.getElementById("auto-count");
 //for every increment add a second, buy one take one second, by 2 take two seconds, etc
 let autoClickerCount = 0;
 //number of donuts to purchase an autoClicker
@@ -14,15 +16,18 @@ let donutMultiplierCount = 0;
 let donutMultiplierCost = 10;
 
 totalDonutCount.innerHTML = donutCount;
+trackerCount.innerHTML = donutCount;
+totalAutoClickerCount.innerHTML = autoClickerCount;
 
 const incrementDonut = () => {
     donutCount++
-    return totalDonutCount.innerHTML = donutCount;
+    totalDonutCount.innerHTML = donutCount;
+    trackerCount.innerHTML = donutCount;
 }
 
 //increments automatically for us every second
 const autoClicker = () => {
-
+    
 }
 
 //Multiplies Donut for each click
@@ -33,3 +38,6 @@ const donutMultiplier = () => {
 
 const incrementCount = document.getElementById("increment-donut");
 incrementCount.addEventListener('click', incrementDonut);
+
+const incrementAutoCount = document.getElementById("increment-auto-count");
+incrementAutoCount.addEventListener('click', autoClicker);

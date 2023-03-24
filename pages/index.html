@@ -2,10 +2,9 @@
 <html lang="en">
 <title>Doughnut Game</title>
 <head>
-    <link rel="stylesheet" type="text/css" href="styling.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="../styling.css" />
+    <link rel="stylesheet" type="text/css" href="../style/customStyling.css" />
 </head>
 <header>
     <nav id="navbar">
@@ -13,6 +12,10 @@
             <li><a href='./about.html'>About</a></li>
             <li><a href='./inspiration.html'>Inspiration</a></li>
             <li><a href='./me.html'>Me</a></li>
+            <div class="tracker-container">
+                <a>Donuts: </a>
+                <a id="tracker-count">0</a>
+            </div>
         </ul>
     </nav>
 </header>
@@ -23,13 +26,14 @@
                 <h1>Welcome to Fred the Bakers Bakery!</h1>
                 <h3>Please select how many Donuts you would like!</h3>
             </div>
+
             <section>
                 <div class="section-1">
                     <!--Section that handles click
                     Contains a button that can be clicked to make donuts.
                     Displays the amount of Donuts made.-->
                     <div class="doughnuts">
-                        <img class="doughnut-img" src="../images/donuts.jpg" alt="doughnuts" />
+                        <img class="images" src="../images/donuts.jpg" alt="doughnuts" />
                         <div class="donut-info">
                             <h4>Doughnuts: </h4>
                             <h3 id="donut-count">0</h3>
@@ -40,10 +44,20 @@
             </section>
             <section>
                 <div class="section-2">
-                    <h1>A section that interacts with the AutoClicker</h1>
-                    <h2>Displays the amount of Auto Clickers purchased.</h2>
-                    <h2>Provides a button to purchase Auto Clickers.</h2>
-                    <h2>Button is disabled when you do not have enough Donuts to buy an Auto Clicker.</h2>
+                    <!--A section that interacts with the AutoClicker
+                    Displays the amount of Auto Clickers purchased.
+                    Provides a button to purchase Auto Clickers.
+                    Button is disabled when you do not have enough Donuts to buy an Auto Clicker.-->
+                    <div class="auto-donuts">
+                        <h3>Feeling Risky? Go ahead and use Auto.</h3>
+                        <h3>Come back in an hour and see how many donuts you'll buy.</h3> 
+                        <img class="images" src="../images/automatic.png" alt="auto" />
+                        <div class="donut-info">
+                            <h4>Doughnuts: </h4>
+                            <h3 id="auto-count">0</h3>
+                            <button class="button" id="increment-auto-count" type="button">Auto Increment</button>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section>
@@ -56,7 +70,7 @@
             </section>
         </div>
     </div>
-    <script src="./scripts/DonutMaker.js"></script>
+    <script src="../logic/DonutMaker.js"></script>
 </body>
 <footer><p>Author: Calvin Malagon</p></footer>
 </html>
