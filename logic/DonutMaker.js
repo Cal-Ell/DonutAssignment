@@ -2,7 +2,7 @@
 const trackerCount = document.getElementById("tracker-count");
 const totalDonutCount = document.getElementById("donut-count");
 //increase amount by clicks
-let donutCount = 0;
+let donutCount = 100;
 
 const totalAutoClickerCount = document.getElementById("auto-count");
 //for every increment add a second, buy one take one second, by 2 take two seconds, etc
@@ -31,6 +31,14 @@ const autoClicker = () => {
         alert('You don\'t\ have enough donuts to purchase.');
         return null;
     }
+
+    setInterval(function(){
+        donutCount += donutCount && autoClickerCount;
+        totalAutoClickerCount.innerHTML = donutCount;
+        totalDonutCount.innerHTML = donutCount;
+        trackerCount.innerHTML = donutCount;
+        
+    }, 1000);
 }
 
 //Multiplies Donut for each click
